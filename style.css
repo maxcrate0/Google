@@ -267,7 +267,6 @@ body {
     color: #202124;
 }
 
-/* Responsividade */
 @media (max-width: 600px) {
     .login-box {
         padding: 24px 20px;
